@@ -1,0 +1,20 @@
+
+ /* Styling on Buttons */
+
+ .custom-button:hover {
+    background-color: black;
+    color: white;
+   font-weight: 600;  
+  }
+/* style on success massage */
+#discounted {
+    display: none;
+    color: rgba(0, 231, 0, 0.918);   
+
+}
+/* style on invalid massage */
+#invalid{
+
+    display: none; 
+    color: red;
+}

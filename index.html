@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac</title>
+    <!-- Styles Added -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Added -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center fw-bolder">
+
+            <span class="text-danger ">iMac</span> Order Now!
+        </h1>
+    </header>
+    <!-- main starts -->
+    <main>
+        <section class="container my-5">
+            <div class="row gy-5">
+                <!-- imac image added with carousel-->
+
+                <div class="col-lg-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/mac.png" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/imac.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/imac2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/imac3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/imac4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-7">
+                    <!-- description -->
+                    <h1 class="fs-1 fw-bolder">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic
+                        Mouse Magic Keyboard - US English</p>
+
+                    <!-- memories -->
+                    <p class="fw-bolder mb-0">Memory</p>
+                    <button id="8GB-memory" type="button" class="custom-button btn-lg px-3 py-2 rounded border">8GB
+                        unified
+                        memory</button>
+                    <button id="16GB-memory" type="button" class="custom-button btn-lg px-3 py-2 rounded border">16GB
+                        unified
+                        memory</button>
+
+                    <!-- storage -->
+                    <p class="fw-bolder mb-0 mt-4">Storage</p>
+                    <button id="256GB-storage" type="button" class="custom-button btn-lg px-3 py-2 rounded border">256GB
+                        SSD
+                        storage</button>
+                    <button id="512GB-storage" type="button" class="custom-button btn-lg px-3 py-2 rounded border">512GB
+                        SSD
+                        storage</button>
+                    <button id="1TB-storage" type="button" class="custom-button btn-lg px-3 py-2 rounded border">1TB
+                        SSD
+                        storage</button>
+
+                    <!-- Delivery Charge -->
+                    <p class="fw-bolder mb-0 mt-4">Choose your delivery option</p>
+                    <button id="free-delivery" type="button"
+                        class="custom-button btn-lg px-3 py-2 rounded border">Friday, Aug 25
+                        Free Prime Delivery</button>
+                    <button id="premium-delivery" type="button"
+                        class="custom-button btn-lg px-3 py-2 rounded border">Friday,Aug 21
+                        Delivery Charge $20</button>
+
+                    <!-- Prices -->
+                    <div class="row my-5">
+                        <div class="col-lg-6">
+                            <!-- Best Price -->
+                            <div class=" d-flex justify-content-between">
+                                <p class="fw-bolder">Best Price</p>
+                                <p class="fw-bolder">$<span id="best-price">1299</span></p>
+                            </div>
+                            <hr class="mt-0">
+
+                            <!-- Memory Cost -->
+                            <div class=" d-flex justify-content-between">
+                                <p class="fw-bolder">Extra Memory Cost</p>
+                                <p class="fw-bolder">$<span id="memory-cost">0</span></p>
+                            </div>
+                            <hr class="mt-0">
+
+                            <!-- Storage Cost -->
+                            <div class=" d-flex justify-content-between">
+                                <p class="fw-bolder">Extra Storage Cost</p>
+                                <p class="fw-bolder">$<span id="storage-cost">0</span></p>
+                            </div>
+                            <hr class="mt-0">
+
+                            <!-- Delivery Charge -->
+                            <div class=" d-flex justify-content-between">
+                                <p class="fw-bolder">Delivery Charge</p>
+                                <p class="fw-bolder">$<span id="delivery-cost">0</span></p>
+                            </div>
+                            <hr id="hr-line" class="mt-0 fw-bolder border-bottom text-dark">
+
+                            <!-- Total Price -->
+                            <div class=" d-flex justify-content-between">
+                                <p class="fw-bolder">Total Price</p>
+                                <p class="fw-bolder">$<span id="total-cost">1299</span> </p>
+                            </div>
+
+                            <!-- Applying Promo Code -->
+                            <div>
+                                <p class="mb-1 fw-bold">Add promo code</p>
+                                <input id="promo-code" type="text">
+                                <button id="apply-promo" class="btn btn-danger">Apply</button>
+                            </div>
+                            <div>
+
+                                <p id="discounted">WoW! you Got 20% Discount. Buy More!</p>
+                                <p id="invalid">invalid promo code!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Final Price -->
+                <div class="container text-center mt-0">
+                    <h1>Total: $<span id="final-price">1299</span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Ending of main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- js file added -->
+    <script src="js/imac.js"></script>
+</body>
+
+</html>
